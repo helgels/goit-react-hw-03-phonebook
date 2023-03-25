@@ -1,0 +1,29 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #fff0f5;
+  line-height: 1.62;
+  border: transparent;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+  color: #e9967a;
+  border: 1px solid #e9967a;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff8dc;
+  background-color: #e9967a;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+}
